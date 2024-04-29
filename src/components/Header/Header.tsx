@@ -1,7 +1,7 @@
 // index.tsx
 // import styles from './index.module.scss';
 import { devDependencies } from '../../../package.json';
-// import { useState } from 'react';
+import ReactLogo from '@assets/react.svg';
 
 export function Header() {
   return (
@@ -13,6 +13,8 @@ export function Header() {
           vite version: {devDependencies.vite}
         </h1>
       </div>
+
+      <img src={ReactLogo} />
     </div>
   );
 }

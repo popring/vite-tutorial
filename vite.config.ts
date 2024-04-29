@@ -33,5 +33,11 @@ export default defineConfig({
       // 其中，name 表示当前文件名，local 表示类名
       generateScopedName: '[name]__[local]___[hash:base64:5]'
     }
+  },
+  resolve: {
+    // 别名配置
+    alias: {
+      '@assets': path.join(__dirname, 'src/assets')
+    }
   }
 });
